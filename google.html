@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" type="text/css" href="google.css">
+</head>
+<body>
+    <div>
+        <div class= "nav">
+            <span><a href="#" id="gmail">Gmail</a></span>
+            <span><a href="#" id="imgs">Images</a></span>
+            <span><button id= "btn0"><a href="#" style="color: #fff;">Sign in</a></span></button>
+        </div>
+
+        <div class="main">
+            <img src="imgs/google.png">
+
+            <br><br><br>
+                <form id="form1">
+                    <input id="inp" type="text" onkeydown="search(this)" >
+                </form>
+            <br><br><br>
+            
+            <button  class="btn" id="btn1" onclick="validate()" ><a href="#" id="a1">Google Search</a></button>
+
+            <button type="submit" class="btn" id="btn2">I'm Feeling Lucky</button>
+            <br><br><br>
+
+            
+            <div class= "lang">
+                <span> Google offered in:</span>
+                <a href="#">हिन्दी</a> &nbsp;
+                <a href="#">বাংলা</a> &nbsp;
+                <a href="#">తెలుగు</a >&nbsp;
+                <a href="#">मराठी</a> &nbsp;
+                <a href="#">தமிழ்</a> &nbsp;
+                <a href="#">ગુજરાતી</a> &nbsp;
+                <a href="#">ಕನ್ನಡ</a> &nbsp;
+                <a href="#">മലയാളം</a> &nbsp;
+                <a href="#">ਪੰਜਾਬੀ</a> &nbsp;
+            </div>
+        </div>
+    </div>
+     
+    <script>
+        var val = document.getElementById("inp");
+        let linkname = "https://www.google.com";
+        var searchKey= "";
+        // var searchVal = val.value;
+        
+
+       
+      
+        document.getElementById("inp").addEventListener("keyup", (e) => {
+        searchKey= e.currentTarget.value;
+        });
+
+            
+        function validate(){
+            linkname = "https://www.google.com/search?q="+searchKey;
+            document.getElementById("a1").href = linkname;
+        }
+
+        function search(e){
+            if(event.key === 'Enter'){
+
+                
+                event.preventDefault();
+                location.href = "https://www.google.com/search?q="+searchKey;
+                
+
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>

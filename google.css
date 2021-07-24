@@ -1,0 +1,106 @@
+body{
+    margin: 20px;
+    font: 13px arial,sans-serif;
+    /* background-color: cornflowerblue; */
+}
+
+.nav{
+    float: right;
+}
+
+.nav
+a{  
+    text-align: right; 
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    /* padding: 10px; */
+}
+
+#a1{  
+    /* text-align: right;  */
+    /* margin: 10px; */
+    text-decoration: none;
+    color: black;
+    /* padding: 10px; */
+}
+
+
+#imgs:hover{
+    text-decoration: underline;
+}
+#gmail:hover{
+    text-decoration: underline;
+}
+
+#btn0{
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin: 0px 8px;
+    padding: 9px 15px;
+    font: 14px arial;
+    color: white;
+
+}
+
+
+#btn0:hover{
+    cursor: pointer;
+    background-color: #4f91e7;
+}
+
+.main{
+    text-align: center;
+    padding: 113px;
+    
+}
+
+
+
+#inp{
+    width: 45%;
+    height: 40px;
+    border: solid 1px rgb(218, 217, 217);
+    border-radius: 25px;
+    padding: 0px 20px;
+}
+
+#inp:focus{
+    outline: none;
+}
+
+
+
+#inp:hover {
+    
+    box-shadow: 1px 1px 1px 1px rgb(230, 224, 224);
+    transform: scale(1.0005);
+    
+} 
+
+.btn{
+    width: 11%;
+    height: 30px;
+    border: transparent;
+    background-color: #f8f9fa;
+    font: 14px arial, sans-serif!important;
+    color: #222222;
+}
+
+.btn:hover{
+    border: solid 1px rgb(218, 217, 217);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.lang
+a{
+    word-spacing: 0.5rem;
+    text-decoration: none;
+}
+
+.lang
+a:hover{
+    text-decoration: underline;
+}
