@@ -25,6 +25,11 @@ a{
     /* padding: 10px; */
 }
 
+#a2{
+    text-decoration: none;
+    color: black;
+}
+
 
 #imgs:hover{
     text-decoration: underline;
